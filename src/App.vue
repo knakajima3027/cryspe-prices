@@ -1,6 +1,8 @@
 <template>
   <div>
-    <v-card>
+    <div class="search">
+    <v-card align-content="center">
+      <v-card-title class="title">クリスぺプライス</v-card-title>
       <v-card-text>
         <v-form>
           <v-container>
@@ -19,18 +21,19 @@
         </v-form>
       </v-card-text>
     </v-card>
+    </div>
 
     
   <v-container>
     <v-row class="blue lighten-4" style="height: 450px;" justify="center" align-content="center">
-    <v-col cols="6" xs="12" sm="6" md="2" lg="2" v-for="card in cards" v-bind:key="card.img">
+    <v-col cols="6" xs="12" sm="6" md="3" lg="3" v-for="card in cards" v-bind:key="card.img">
       <v-card class="mx-auto" max-width="344px">  
         <v-img :src="card.img" height="300px"></v-img>
         <v-card-title>
           {{ card["name"] }}
         </v-card-title>
         <v-card-subtitle> 
-          {{ card["price"] }} 円
+          <strong>{{ card["price"] }} 円</strong> ({{ card["store"] }})
         </v-card-subtitle>
       <v-card-actions>
         <v-btn :href=card.url nuxt>詳細を確認する</v-btn>
@@ -50,8 +53,9 @@
 </template>
 
 <style>
-  img {
-    width: 100px;
+  .search {
+    padding: 20px 60px;
+    text-align: center;
   }
 </style>
 <script>
@@ -81,7 +85,8 @@ export default {
             "name": response[i]['name'],
             "price": response[i]['price'],
             "url": response[i]['url'],
-            "img": response[i]['img']
+            "img": response[i]['img'],
+            "store": response[i]['store']
           };
           this.cards.push(card)
         }
