@@ -2,7 +2,7 @@
 <div>
   <div class="search">
     <v-card color="success">
-      <v-card-title class="form-title" align="center">Cryspe-prices</v-card-title>
+      <v-card-title class="form-title" align="center">カードを探す</v-card-title>
       <v-card-text>
         <v-form>
           <v-container>
@@ -11,7 +11,7 @@
               <v-text-field v-model="name" prepend-icon="address-card" label="カード名" />
             </v-col>
             <v-col cols="12" md="12">
-              <v-text-field v-model="price" prepend-icon="usd-circle" label="値段" />
+              <v-text-field v-model="price" prepend-icon="usd-circle" label="値段 (円以下)" />
             </v-col>
             </v-row>
           </v-container>
@@ -74,17 +74,17 @@ export default {
 
 <style>
   .search {
-    padding: 30px 70px;
+    padding: 10px 30px;
     max-width: 1000px;
     margin: 0 auto;
   }
   .form-title {
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     margin: auto;
     padding: auto 10px;
     color: #fff;
-    background: #000;
+    background: #261e1c;
     border-radius: 20%;
   }
   .btn {
