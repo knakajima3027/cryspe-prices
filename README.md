@@ -1,5 +1,5 @@
 # Cryptospells Prices
-![シマリスクの検索結果](./asset/sample1.png "シマリスク")
+![シマリスクの検索結果](./asset/sample.png "シマリスク")
   
 
 ## :video_game: このアプリについて  
