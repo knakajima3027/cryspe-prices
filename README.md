@@ -1,24 +1,10 @@
-# front
+# Cryptospells Prices
 
-## Project setup
-```
-npm install
-```
+## このアプリについて  
+Cryptospellsのカードを販売しているサイトのカード価格をまとめて確認できるページです。  
+![シマリスクの検索結果](./asset/sample1.png "シマリスク")
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Cryptospells
+ブロックチェーン技術を使ったトレーディングカードゲームです。  
+https://cryptospells.jp/  
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
