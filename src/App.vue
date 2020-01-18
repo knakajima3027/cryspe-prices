@@ -74,7 +74,7 @@ export default {
         params["card_price"] = 10 ** 20
       } 
       const qs = new URLSearchParams(params);
-      fetch(`http://127.0.0.1:5000/api?${qs}`)
+      fetch(`https://crypt-api.herokuapp.com/api?${qs}`)
       .then( response => {
         return response.json()
       })
