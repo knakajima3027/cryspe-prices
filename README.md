@@ -22,4 +22,4 @@ Cryptospellsのカードを販売しているサイトのカード価格をま�
 * Vuetify.js
 
 ## :video_game: URL  
-https://knakajima3027.github.io/front/
+https://knakajima3027.github.io/cryspe-prices/
