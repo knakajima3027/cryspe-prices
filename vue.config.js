@@ -1,5 +1,5 @@
 module.exports = {
-  "publicPath": "/front/",
+  "publicPath": "/cryspe-prices/",
   "outputDir": "docs",
   "transpileDependencies": [
     "vuetify"
